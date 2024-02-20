@@ -1,13 +1,13 @@
 def get_user_review():
 
     while True:
-        point = input("Por favor, introduzca una puntuación del 1 al 5: ")
+        point = input("Introduzca una puntuación del 1 al 5: ")
     
         if point.isdigit():
             point = int(point)
 
             if 1 <= point <= 5:
-                comment = input("Ingrese su Comentario: ")
+                comment = input("Ingrese un comentario: ")
                 print("\n")
 
                 post = f'point:{point}, comment: {comment}'
@@ -30,13 +30,13 @@ def show_results_to_date():
 def  option_menu():
 
     while True:
-            print("Seleccione el proceso que desea llevar a cabo\n1: Introduzca sus puntos de evaluación y comentarios\n2: Compruebe los resultados hasta el momento\n3: Finalizar.\n")
+            print("Seleccione un proceso.\n1: Introduzca sus puntos de evaluación y comentarios\n2: Compruebe los resultados hasta el momento\n3: Finalizar.\n")
             opction = input("Option: ")
 
             if opction.isdigit():
                 opction = int(opction)
             else: 
-                print("Error: No Numerico")
+                print("Error: No numerico")
                 continue
 
             if opction == 1:
@@ -47,6 +47,6 @@ def  option_menu():
                 print("Fin")
                 break
             else:
-                print("Por favor, introduzca un valor del 1 al 3\n")
+                print("Introduzca un valor del 1 al 3\n")
 
 option_menu()
