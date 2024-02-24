@@ -36,7 +36,7 @@ def  option_menu():
             if opction.isdigit():
                 opction = int(opction)
             else: 
-                print("Error: No Numerico")
+                print("Error: No es un numero")
                 continue
 
             if opction == 1:
